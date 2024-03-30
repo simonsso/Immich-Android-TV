@@ -1,0 +1,27 @@
+name: Build Android objects 
+on: # rebuild any PRs and main branch changes
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout (GitHub)
+        uses: actions/checkout@v4
+
+      - name: Build and run dev container task
+        uses: devcontainers/ci@v0.3
+        with:
+          # Change this to be your CI task/script
+          runCmd: |
+             chmod +x gradlew
+             ./gradlew build
+      # - name: Upload Artifacts
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #       name: android
+      #       path: android-obj.zip
