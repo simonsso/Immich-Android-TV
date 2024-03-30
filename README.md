@@ -41,7 +41,7 @@ reports if you find any: https://github.com/giejay/Immich-Android-TV/issues/new/
 
 ### Build steps
 1. Create an account at firebase and create a google-services.json file
-2. copy app/src/main/res/values/strings_other.xml.example to app/src/main/res/values/strings_other.xml and modify the address and API keys for your demo server.
+2. copy app/src/strings_other.xml.example to app/src/main/res/values/strings_other.xml and modify the address and API keys for your demo server.
 3. Build apk with gradlew assembleRelease
 
 
