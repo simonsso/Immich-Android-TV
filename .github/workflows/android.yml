@@ -31,7 +31,9 @@ jobs:
          cp  app/src/strings_other.xml.example app/src/main/res/values/strings_other.xml
          echo $GOOGLE_SERVICES_BASE64 | base64 --decode > ./app/google-services.json
     - name: Build with Gradle
-      run: ./gradlew assembleRelease
+      run: |
+         ./gradlew assembleRelease
+         find | grep apk
     - name: Upload Artifacts
       uses: actions/upload-artifact@v4
       with:
