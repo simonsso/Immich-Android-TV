@@ -1,0 +1,5 @@
+<resources>
+    <string name="api_key">GetSecretAPIKeyFromUI</string>
+    <string name="authentication_url">https://10.1.15.216:2283/api</string>
+    <string name="host_name">https://10.1.15.216:2283</string>
+</resources>
