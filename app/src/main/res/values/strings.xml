@@ -55,4 +55,9 @@
 
     <!-- Watch Next -->
     <string name="season">%1$s Season %2$s</string>
+
+    <!-- Mock strings -->
+    <string name="api_key" />
+    <string name="authentication_url" />
+    <string name="host_name" />
 </resources>
