@@ -1,5 +1,7 @@
 <resources>
-    <string name="api_key">GetSecretAPIKeyFromUI</string>
-    <string name="authentication_url">https://10.1.15.216:2283/api</string>
+    <!-- Api key and URL (omiting /api for immich installation to use as demo / default -->
     <string name="host_name">https://10.1.15.216:2283</string>
+    <string name="api_key">GetSecretAPIKeyFromUI</string>
+    <!-- Link to remote system supporting phone authentication -->
+    <string name="authentication_url">https://example.com/authentication_using_phone_url</string>
 </resources>
